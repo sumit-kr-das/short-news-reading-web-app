@@ -45,5 +45,3 @@ newsRouter.get('/:country/:category', async (req, res) => {
 })
 
 module.exports = newsRouter
-
-// 5a2a2b8fbb824262b4879797c4ef7e5a
