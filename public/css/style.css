@@ -1,0 +1,135 @@
+@import url(./_utility.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Barlow", sans-serif;
+}
+.root {
+  margin: 0 auto;
+  padding: 0 6rem;
+  overflow-x: hidden;
+}
+header nav {
+  padding: 3rem 0;
+  font-size: 2.5vh;
+}
+header nav img {
+  width: 40px;
+  height: 40px;
+}
+header nav ul li {
+  padding-left: 2rem;
+}
+header nav ul li a {
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+  color: var(--Dark-Grayish-Blue);
+}
+/* Header Section */
+header .wrapper {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+header .wrapper > div {
+  flex: 1 0 50%;
+}
+header .wrapper img {
+  position: relative;
+  transform: scale(1);
+  /* top: 80px; */
+  right: -10px;
+}
+header .wrapper .border {
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  padding: 5px 10px;
+  font-weight: 700;
+  border-radius: 15px;
+}
+header .wrapper .spaceing {
+  letter-spacing: 4px;
+}
+header .wrapper .type_rider {
+  margin: 1.5rem 0;
+}
+header .wrapper .type_rider h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--Very-Dark-Blue);
+  font-weight: 700;
+  font-size: 6vw;
+  position: relative;
+  overflow: hidden;
+}
+/* Type Rider Effect */
+h1 .box {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  background: #ff5e5e;
+  width: 100px;
+  height: 1vw;
+  z-index: -1;
+}
+h1 .hi {
+  display: inline-block;
+}
+/* box */
+section {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "status";
+
+  font-family: "Roboto", sans-serif;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card_image {
+  grid-area: image;
+  background-image: url("../images/19199050.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card_text {
+  grid-area: text;
+  margin: 25px;
+}
+.card_starts {
+  grid-area: status;
+}
+.card_text .date {
+  color: rgb(255, 7, 110);
+  font-size: 13px;
+}
+.card_text p {
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+}
+.card_text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+.cards:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
