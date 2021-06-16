@@ -23,6 +23,6 @@ app.use('/allnews', newsRouter)
 app.use('/:country/:category', newsRouter)
 
 
-app.listen(PORT, '127.0.0.1', () => {
+app.listen(PORT, () => {
     console.log(`Listening on port no ${PORT}`);
 })
