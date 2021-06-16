@@ -19,7 +19,8 @@ app.use(bodyParser.urlencoded({
 //routes
 const newsRouter = require('./src/routes/news')
 app.use('/', newsRouter)
-app.use('/article', newsRouter)
+app.use('/allnews', newsRouter)
+app.use('/:country/:category', newsRouter)
 
 
 app.listen(PORT, '127.0.0.1', () => {

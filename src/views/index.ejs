@@ -17,23 +17,17 @@
 </head>
 
 <body>
+
     <div class="root">
         <header>
             <!-- Nav Bar -->
-            <nav class="flex flex-center space-between">
-                <img src="/images/logo.svg" alt="logo">
-                <ul class="flex flex-center">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                </ul>
-            </nav>
+            <%-include('./partials/header')%>
             <!-- Header Section -->
             <div class="wrapper flex flex-center">
                 <div>
                     <div>
                         <span class="border">New</span>
-                        <span class="spaceing">Monograph Dashboard</span>
+                        <span class="spaceing">Daily News</span>
                         <div class="type_rider">
                             <h1>
                                 <span class="box"></span>
@@ -42,25 +36,28 @@
                                 <span class="cursor">_</span>
                             </h1>
                         </div>
-                        <p>Project planning and time tracking for agile teams</p>
+                        <p>Latest News Today: Breaking news on Politics, Business, Sports, Bollywood, Education,
+                            Science.</p>
                     </div>
-                    <a href="#">Schedule a demo</a>
+                    <a class="blog_links" href="#catagory">Choose your category</a>
                 </div>
-                <div>
+                <div class="img">
                     <img src="/images/illustration-devices.svg" alt="">
                 </div>
             </div>
         </header>
+        <h1 class="heading">Categories</h1>
     </div>
-    <section>
-        <a href="/in/technology">
+    <!-- Cards -->
+    <section class="all_cards">
+        <a id="catagory" href="/in/technology">
             <div class="cards">
                 <div class="card_image">
-
+                    <img src="/images/19199050.jpg" alt="">
                 </div>
                 <div class="card_text">
-                    <span class="date">4 Days ago</span>
-                    <h2>Post One</h2>
+                    <span class="date">1 Days ago</span>
+                    <h2>Technology</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni fugit quia harum
                         facere
                         totam blanditiis, molestias sunt possimus recusandae culpa tempore nostrum.</p>
@@ -70,14 +67,15 @@
                 </div>
             </div>
         </a>
-        <a href="/in/business">
-            <div class="cards" onclick="fun()">
-                <div class="card_image">
 
+        <a href="/in/science">
+            <div class="cards">
+                <div class="card_image">
+                    <img src="/images/science.jpg" alt="">
                 </div>
                 <div class="card_text">
-                    <span class="date">4 Days ago</span>
-                    <h2>Post One</h2>
+                    <span class="date">1 Days ago</span>
+                    <h2>Science</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni fugit quia harum
                         facere
                         totam blanditiis, molestias sunt possimus recusandae culpa tempore nostrum.</p>
@@ -87,14 +85,15 @@
                 </div>
             </div>
         </a>
-        <a href="/in/business">
-            <div class="cards" onclick="fun()">
-                <div class="card_image">
 
+        <a href="/in/sports">
+            <div class="cards">
+                <div class="card_image">
+                    <img src="/images/sport.jpg" alt="">
                 </div>
                 <div class="card_text">
-                    <span class="date">4 Days ago</span>
-                    <h2>Post One</h2>
+                    <span class="date">1 Days ago</span>
+                    <h2>Sports</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni fugit quia harum
                         facere
                         totam blanditiis, molestias sunt possimus recusandae culpa tempore nostrum.</p>
@@ -104,14 +103,51 @@
                 </div>
             </div>
         </a>
-        <a href="/in/business">
-            <div class="cards" onclick="fun()">
-                <div class="card_image">
 
+        <a href="/in/health">
+            <div class="cards">
+                <div class="card_image">
+                    <img src="/images/helth.jpg" alt="">
                 </div>
                 <div class="card_text">
-                    <span class="date">4 Days ago</span>
-                    <h2>Post One</h2>
+                    <span class="date">1 Days ago</span>
+                    <h2>Health</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni fugit quia harum
+                        facere
+                        totam blanditiis, molestias sunt possimus recusandae culpa tempore nostrum.</p>
+                </div>
+                <div class="card_starts">
+
+                </div>
+            </div>
+        </a>
+
+        <a href="/in/entertainment">
+            <div class="cards">
+                <div class="card_image">
+                    <img src="/images/entertetment.jpg" alt="">
+                </div>
+                <div class="card_text">
+                    <span class="date">1 Days ago</span>
+                    <h2>Entertainment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni fugit quia harum
+                        facere
+                        totam blanditiis, molestias sunt possimus recusandae culpa tempore nostrum.</p>
+                </div>
+                <div class="card_starts">
+
+                </div>
+            </div>
+        </a>
+
+        <a href="/in/business">
+            <div class="cards">
+                <div class="card_image">
+                    <img src="/images/business.jpg" alt="">
+                </div>
+                <div class="card_text">
+                    <span class="date">1 Days ago</span>
+                    <h2>Business</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni fugit quia harum
                         facere
                         totam blanditiis, molestias sunt possimus recusandae culpa tempore nostrum.</p>

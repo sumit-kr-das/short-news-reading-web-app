@@ -6,16 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nodejs news</title>
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-    <h1>all heading</h1>
+    <header class="linked-header">
+        <%-include('./partials/header')%>
+    </header>
+
     <% articles.forEach(function(article, index){%>
-    <img src="<%=article.urlToImage%>" alt="">
-    <h1><%=article.title%></h1>
-    <p><%=article.content%></p>
+    <section class="blog">
+        <div class="blog_post">
+            <div class="blog_img">
+                <img src="<%=article.urlToImage%>" alt="server issue">
+            </div>
+            <div class="blog_post_info">
+                <div class="blog_post_date">
+                    <span>2021-06-15T03:29:48Z</span>
+                </div>
+                <h1 class="blog_title">
+                    <%=article.title%>
+                </h1>
+                <div class="blog_post_text">
+                    <p class="blog_text"><%=article.description%></p>
+                    <p class="blog_text"><%=article.content%></p>
+                </div>
+                <a class="blog_links" href="<%=article.url%>">Read More</a>
+            </div>
+        </div>
+    </section>
     <% })%>
 
 </body>

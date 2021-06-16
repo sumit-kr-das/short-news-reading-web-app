@@ -10,13 +10,38 @@
 </head>
 
 <body>
+    <header class="linked-header">
+        <%-include('./partials/header')%>
+    </header>
 
-    <h1>heading</h1>
+    <% articles.forEach(function(article, index){%>
+    <section class="blog">
+        <div class="blog_post">
+            <div class="blog_img">
+                <img src="<%=article.urlToImage%>" alt="server issue">
+            </div>
+            <div class="blog_post_info">
+                <div class="blog_post_date">
+                    <span>2021-06-15T03:29:48Z</span>
+                </div>
+                <h1 class="blog_title">
+                    <%=article.title%>
+                </h1>
+                <div class="blog_post_text">
+                    <p class="blog_text"><%=article.description%></p>
+                    <p class="blog_text"><%=article.content%></p>
+                </div>
+                <a class="blog_links" href="<%=article.url%>">Read More</a>
+            </div>
+        </div>
+    </section>
+    <% })%>
+    <!-- <h1>heading</h1>
     <% articles.forEach(function(article, index){%>
     <img src="<%=article.urlToImage%>" alt="">
     <h1><%=article.title%></h1>
     <p><%=article.content%></p>
-    <% })%>
+    <% })%> -->
 
 </body>
 
