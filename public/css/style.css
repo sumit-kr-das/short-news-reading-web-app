@@ -348,6 +348,9 @@ img {
   .blog_img::before {
     position: unset;
   }
+  header nav {
+    padding: 1rem 0;
+  }
 }
 @media (max-width: 488px) {
   .blog_img {
