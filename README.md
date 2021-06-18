@@ -33,7 +33,7 @@ $ cd npm install
 $ cd npm run dev
 ```
 
-### 5. Finally, go to your repository in browser and search the url
+### 5. Finally, go to your browser and search the url
 
 ```sh
 http://127.0.0.1:8000/
