@@ -24,13 +24,13 @@ Move to this folder for all other commands.
 ### 3. Install all the modules
 
 ```sh
-$ cd npm install
+$ npm install
 ```
 
 ### 4. For run the program in your localhost
 
 ```sh
-$ cd npm run dev
+$ npm run dev
 ```
 
 ### 5. Finally, go to your browser and search the url
